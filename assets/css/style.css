@@ -68,6 +68,11 @@
     background-color: #DDD;
 }
 
+.ti-angle-down{
+    display: inline-block;
+    font-size:14px;
+}
+
 .search-btn{
     position: absolute;
     height: 100%;
