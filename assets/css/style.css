@@ -107,7 +107,7 @@ img{
     object-fit: cover;
     height: 800px;
 }
-.location {
+.slide-description .location {
     margin:10px 0px;
     font-size:24px;
     font-weight: 500;
@@ -154,10 +154,175 @@ img{
 .content-section .content-section__description{
     text-align: justify;
     margin: 15px 0;
+    line-height: 1.4;
 }
 
 .content-section .sub-title{
     font-size:15px;
     color:#BBB;
     margin: 15px 0 ;
+}
+
+.about-section-member{
+    display: flex;
+    justify-content: space-around;
+}
+
+.member{
+
+}
+
+.member .name{
+    letter-spacing: 4px;
+}
+
+.member .member__img{
+    margin-top: 10px;
+    width: 150px;
+    height:200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.content-section-dark{
+    background-color: #000;
+    padding: 64px 16px;
+}
+
+.content-section-dark .title{
+    color:#fff;
+}
+
+.content-section__description{
+    padding: 8px 10px;
+}
+
+.month{
+    background-color: #FFF;
+    padding: 8px 16px;
+    border-bottom: 1px solid #DDD;
+}
+
+.sold-out{
+    display: inline-block;
+    background-color: red;
+    padding: 0 8px;
+    margin-left:16px;
+    color : #fff;
+}
+
+
+.number-ticker{
+    float: right;
+    color: #fff;
+    width: 22px;
+    padding-left: auto;
+    padding-right:auto;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.list-ticket{
+    display:flex;
+    justify-content: space-between;
+}
+
+.ticket{
+    background-color: #fff;
+    margin:0 10px;
+    text-align: left;
+}
+
+.list-ticket:first-child{
+    margin-left: 0px; 
+}
+
+.list-ticket:last-child{
+    margin-right: 0px;
+}
+
+.ticket img{
+    min-width : 245px;
+    height: 183px;
+}
+
+.ticket-content{
+    padding: 10px 15px;
+}
+
+.ticket-content .location{
+    font-weight: 700;
+    margin-bottom:10px;
+}
+
+.ticket-content .ticket-date {
+    color:#AAA;
+}
+
+.buy-ticket-btn {
+    margin-top:10px;
+    padding: 8px 16px;
+    background-color:#000;
+    color:#fff;
+    cursor: pointer;
+    
+    border:none;
+}
+
+.buy-ticket-btn:hover{
+    background-color:#DDD;
+    color:#000;
+}
+
+.contact {
+    font-size:18px;
+    line-height:18px;
+    flex-grow: 0.5;
+}
+
+.contact p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sub-contact{
+    margin: 10px 0;
+    font-weight: 500;
+    text-align: left;
+}
+
+.contact-section {
+    display: flex;
+}
+
+.form-for-contact{
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0.5;
+}
+
+.form-row-1{
+
+}
+
+#name, #email{
+    display:inline-block;
+    padding: 8px;
+    width :40%;
+}
+
+#message{
+    width: 100%;
+}
+
+
+.form-row-2{
+    display:flex;
+    text-align: left;
+}
+
+.send-btn{
+    text-align: right;
+    background:#000;
 }
