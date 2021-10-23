@@ -4,6 +4,107 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.clear-float{
+    clear: both;
+}
+
+/* modal for button buy ticket */
+
+.modal-buy-ticket{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.modal-container{
+    position: relative;
+    width: 900px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.modal-header{
+    display:flex;
+    /* text-align: center; */
+    background-color: #009688;
+    color: #fff;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    font-weight:500;
+}
+
+.modal-header .ti-bag {
+    margin-right:10px;
+}
+
+
+.modal-header .close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 40px;
+    height:40px; */
+    padding :15px;
+    background-color: #009688;
+    border:none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.modal-header .close-btn:hover{
+    background-color:#DDD;
+}
+
+.modal-body{
+    padding: 0 16px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+
+
+.input-label {
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom:12px;
+    width: 100%;
+}
+
+.modal-input input {
+    padding:8px;
+    box-sizing: border-box;
+    width: 100%;
+    border:1px solid #CCC;
+}
+
+.modal-body > button{
+    padding: 16px;
+    margin:16px 0;
+    width: 100%;
+    border: none;
+    background-color: #009688;
+    cursor: pointer;
+}
+
+.modal-body > button:hover{
+    background-color: #DDD;
+}
+
+.modal-footer  {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* end modal */
+
 .header{
     position: fixed;
     top:0;
@@ -174,6 +275,7 @@ img{
 
 .member .name{
     letter-spacing: 4px;
+    font-weight:600;
 }
 
 .member .member__img{
@@ -245,6 +347,11 @@ img{
 .ticket img{
     min-width : 245px;
     height: 183px;
+    transition: all 0.6s;
+}
+
+.ticket img:hover{
+    opacity: 0.5;
 }
 
 .ticket-content{
@@ -273,56 +380,4 @@ img{
 .buy-ticket-btn:hover{
     background-color:#DDD;
     color:#000;
-}
-
-.contact {
-    font-size:18px;
-    line-height:18px;
-    flex-grow: 0.5;
-}
-
-.contact p {
-    display: inline-block;
-    margin-left: 10px;
-}
-
-.sub-contact{
-    margin: 10px 0;
-    font-weight: 500;
-    text-align: left;
-}
-
-.contact-section {
-    display: flex;
-}
-
-.form-for-contact{
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 0.5;
-}
-
-.form-row-1{
-
-}
-
-#name, #email{
-    display:inline-block;
-    padding: 8px;
-    width :40%;
-}
-
-#message{
-    width: 100%;
-}
-
-
-.form-row-2{
-    display:flex;
-    text-align: left;
-}
-
-.send-btn{
-    text-align: right;
-    background:#000;
 }
