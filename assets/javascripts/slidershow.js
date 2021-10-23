@@ -1,6 +1,6 @@
 let head = document.getElementsByClassName("header")[0];
 let content = document.getElementsByClassName("content")[0];
-console.log(head)
+console.log("top:",head.offsetHeight)
 content.style.top = head.offsetHeight + "px";
 let index = 1;
 function autoSlideShow() {
