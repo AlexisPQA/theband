@@ -399,3 +399,82 @@ img{
     background-color:#DDD;
     color:#000;
 }
+
+
+/* begin :CONTACT  */
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.col{
+    text-align: left;
+}
+
+.col-half {
+    width:100%;
+    flex-grow: 0.5;
+}
+
+.contact-info{
+    display: flex;
+    height:100%;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    font-size: 18px;
+    line-height:1.5;
+}
+.contact-info i {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size:15px;
+}
+
+.contact-form .form-control {
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.col-half-flex-2{
+    display: flex;
+}
+
+.form-name,
+.form-email{
+    flex-grow: 0.5;
+}
+
+.form-name{
+    margin-right: 5px;
+}
+
+.form-email{
+    margin-left: 5px;
+}
+
+.form-message{
+    width: 100%;
+}
+
+.form-submit-btn{
+    padding:10px;
+    width: 70px;
+    background-color:#000;
+    color:#fff;
+    float: right;
+    cursor: pointer;
+}
+
+.content-section::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+/* End :contact */
