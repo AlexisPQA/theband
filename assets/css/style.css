@@ -260,6 +260,8 @@ img{
     margin-right: auto;
     max-width: 800px;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .content-section .title{
@@ -306,7 +308,7 @@ img{
 
 .content-section-dark{
     background-color: #000;
-    padding: 64px 16px;
+    padding: 20px 16px;
 }
 
 .content-section-dark .title{
