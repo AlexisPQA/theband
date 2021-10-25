@@ -4,9 +4,14 @@ const subMenu = document.getElementsByClassName("sub-menu")[0];
 let menus = document.getElementsByClassName("menu");
 menuMobile.addEventListener('click',onClickMenuMobile);
 let isShow = false;
+let isShowMore = false;
 function onClickMenuMobile() {
     navigation.style.display = isShow===false ? 'flex' : 'none';
     isShow = !isShow;
+    if(isShowMore){
+        subMenu.style.display = "none";
+        isShowMore = false;
+    }
 }
 
 for(let i = 0; i < menus.length; i++) {
@@ -21,11 +26,9 @@ for(let i = 0; i < menus.length; i++) {
 //hide menu when click on menu item
 function onClickMenu() {
     if(isShow){
-        navigation.style.display = "none";  
+        navigation.style.display = "none";
     }
 }
-
-let isShowMore = false;
 function onClickMore() {
     if(isShowMore){
         subMenu.style.display = "none"
