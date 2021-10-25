@@ -544,6 +544,10 @@
         display: none;
     }
 
+    .menu{
+        padding:14px 24px;
+    }
+
     .menu-mobile-btn{
         display: block;
         color: #fff;
@@ -568,6 +572,19 @@
 
     .form-email, .form-name{
         margin:5px 0;
+    }
+
+    .dropdown-menu:hover .sub-menu{
+        background-color: rgb(37, 36, 36);
+    }
+    .sub-menu a{
+        color: #fff;
+        padding: 13px 20px;
+    }
+
+    .sub-menu a:hover {
+        background-color: #DDD;
+        color: #000;
     }
 }
 /* END bile */
