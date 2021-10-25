@@ -2,11 +2,10 @@ const menuMobile = document.getElementsByClassName("menu-mobile-btn")[0];
 const navigation = document.getElementsByClassName("navigation")[0];
 let menus = document.getElementsByClassName("menu");
 menuMobile.addEventListener('click',onClickMenuMobile);
-console.log(menus)
 let isShow = false;
 function onClickMenuMobile() {
     navigation.style.display = isShow===false ? 'flex' : 'none';
-    isShow = !isShow;   
+    isShow = !isShow;
 }
 
 for(let i = 0; i < menus.length; i++) {
@@ -17,5 +16,7 @@ for(let i = 0; i < menus.length; i++) {
 
 //hide menu when click on menu item
 function onClickMenu() {
-    navigation.style.display = "none";
+    if(isShow){
+        navigation.style.display = "none";  
+    }
 }
