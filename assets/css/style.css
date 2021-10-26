@@ -243,20 +243,22 @@
     bottom: 0;
     padding: 32px 16px;
     width: 100%;
-    color:rgb(4, 63, 224);
+    color: #fff;
     text-align: center;
     box-sizing: border-box;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .slide-description .location {
     margin:10px 0px;
-    font-size:24px;
+    font-size:48px;
     font-weight: 500;
 }
 
 .text {
     margin: 15px 0 ;
     font-size:15px;
+    
 }
 
 .content {
@@ -530,6 +532,15 @@
 
 /*BEGIN responsive */
 
+/* Moblie & table */
+
+@media (max-width:1023px){
+    .footer i{
+        font-size: 36px;
+        padding: 0 8px;
+    }
+}
+
 /*BEGIN mobile */
 @media (max-width:739px) {
     .header{
@@ -561,6 +572,7 @@
 
     .ticket img{
         height: auto;
+        width:100%;
     }
 
     .img-slide {
@@ -568,6 +580,11 @@
     }
     .col-half-flex-2{
         flex-direction: column;
+    }
+
+    .contact-form {
+        font-size: 15px;
+        margin-top:15px;
     }
 
     .form-email, .form-name{
@@ -585,6 +602,20 @@
     .sub-menu a:hover {
         background-color: #DDD;
         color: #000;
+    }
+
+    .member .member__img{
+        width:60%;
+        height: 100%;
+    }
+
+    .form-submit-btn{
+        width: 100%;
+    }
+
+    .buy-ticket-btn {
+        padding: 12px 16px;
+        width: 100%;
     }
 }
 /* END bile */
