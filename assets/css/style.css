@@ -21,13 +21,15 @@
 
     /* hide modal */
     display: none;
+    align-items: center;
+    justify-content: center;  
+    overflow-y: initial !important;  
 }
 
 .modal-container{
     position: relative;
     width: 900px;
     max-width: 95%;
-    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -617,6 +619,16 @@
         padding: 12px 16px;
         width: 100%;
     }
+    .modal-header{
+        height:50px;
+    }
+
+    .modal-footer {
+        margin: 0px 0;
+    }
+    
+
+
 }
 /* END bile */
 /* END responsive */

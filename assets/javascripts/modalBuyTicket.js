@@ -1,7 +1,7 @@
 const modal = document.getElementsByClassName("modal-buy-ticket")[0];
 const modalContainer = document.getElementsByClassName("modal-container")[0]
 function onClickBuyTicket (){
-    modal.style.display ="block"
+    modal.style.display ="flex"
 }
 
 function onClickCloseModal(){
